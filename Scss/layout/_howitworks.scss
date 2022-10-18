@@ -1,0 +1,80 @@
+@use "../abstracts/variables" as *;
+// how it works section body
+.pager-step{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+// cards
+    .step-card{
+        display: flex;
+        align-items: flex-start;
+        text-align: center;
+
+
+        &:nth-child(3){
+            background-color: lightgray;
+        }
+
+        &:first-child{
+            background-color: $blue-clr;
+        }
+
+        &:nth-child(5){
+            background-color: $orange-clr;
+        }
+    }
+// card-title
+    .card-title{
+        margin: 0 auto;
+        font-size: 3em;
+        padding: 2em;
+        font-family: 'Frank Ruhl Libre', serif;
+    }
+// card number
+    .card-number{
+        opacity: .5;
+        margin: .2em;
+        font-size: 2em;
+        font-family: 'Frank Ruhl Libre', serif;
+    }
+// card item
+    .card-item{
+        opacity: .8;
+        margin: 0 auto;
+        font-size: 1.3rem;
+        padding: 4em 0;
+        padding-right:3em ;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        width: 55%;
+
+    }
+}
+
+@media only screen and (min-width: 768px){
+    // how it works section body
+    .pager-step{
+        flex-direction: row;
+        flex-wrap: wrap;
+        // card-title 
+        .card-title{
+            flex: 1 1 33%;
+        }
+// cards
+        .step-card{
+            height: 20em;
+            flex: 1 1 33%;
+            align-items: center;
+        }
+// card item
+        .card-item{
+            font-size: 1.1em;
+            opacity: .7;
+        }
+// card number
+        .card-number{
+            align-self: flex-start;
+        }
+    }
+
+}

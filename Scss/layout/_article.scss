@@ -1,0 +1,45 @@
+// About us section
+
+@use "../abstracts/variables" as *;
+// about us body
+.article-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $yellow-clr;
+    align-items: center;
+// about us title
+    .article-title {
+        color: white;
+        margin-top: 1.5em;
+        font-size: 2.5em;
+        font-family: 'Frank Ruhl Libre', serif;
+    }
+// about us paragraph
+    .top-text,
+    .bottom-text {
+        font-family: 'Fira Sans', sans-serif;
+        text-align: center;
+        padding: 2em 2.5em;
+        line-height: 1.3em;
+    }
+}
+// bigger screen
+@media only screen and (min-width: 768px){
+    // about us body
+.article-container{
+    justify-content: center;
+    padding-top: 20em;
+// about us title
+    .article-title{
+        font-size: 3em;
+    }
+// about us paragraph
+    .top-text,
+    .bottom-text{
+        opacity: .7;
+        font-size: 1.5em;
+        width: 30%;
+    }
+}
+}
+

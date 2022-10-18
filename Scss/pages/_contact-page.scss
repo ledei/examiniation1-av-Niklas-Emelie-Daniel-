@@ -1,0 +1,213 @@
+@use "../abstracts/variables" as *;
+//header css
+.header-wrapper {
+  background-color: #C7DDEA;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+
+  .header-title {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50%;
+    padding-left: 2rem;
+  }
+}
+//nav css
+.nav-container {
+  .navbar {
+    background-color: white;
+    .navbar-list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .nav-item {
+        flex: 50%;
+        text-align: center;
+          .nav-item, a {
+          font-weight: bold;
+          display: block;
+          padding: 2rem;
+          text-decoration: none;
+          transition: background-color 0.2s ease-in-out;
+          color: $grey-clr;
+
+          &:hover {
+            background-color: $light-grey-clr;
+            color: black
+          }
+        }
+
+      }
+    }
+  }
+}
+//form css
+.main-container {
+
+  .form-wrapper {
+
+    background-color: $grey-clr;
+    padding: 2rem 2rem 12rem 2rem;
+
+    .form-title {
+      font-size: 4rem;
+      color: white;
+      margin-bottom: 2rem;
+    }
+    .form-container {
+      display: flex;
+      flex-direction: column;
+
+      .form-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+
+        label {
+          color: $light-grey-clr;
+          font-size: 1.125rem;
+          margin-bottom: 0.325rem;
+        }
+        input, textarea {
+          color: black;
+          padding: 1rem;
+          background-color: white;
+          border: 0;
+          border-radius: 2px;
+        }
+      }
+      .submit-btn {
+        margin-left: auto;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+        border: 0;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.2);
+        transition: font-size 0.2s ease-in-out;
+        cursor: pointer; 
+      }
+    }
+  }
+
+  .map-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .map-box {
+      color: white;
+      background-color: #FAB131;
+      position: absolute;
+      top: -9em;
+      width: 90%;
+      // min-width: calc(100% - 4rem);
+      // transform: translate(-50%, -50%);
+      .map-box__content {
+        padding: 2rem 2rem 4rem 2rem;
+        .map-box__content, h3 {
+          font-size: 2rem;
+          margin-bottom: 0.5rem;
+        }
+        .map-box__content, p {
+          font-size: 1.125rem;
+          margin-bottom: 0.5rem;
+        } 
+      }
+    }
+    .map-image-wrapper {
+
+      .map-photo {
+        width: 100%;
+        // object-fit: cover;
+        display: block;
+      } 
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  //header
+  .header-title {
+    margin-left: 7em;
+  }
+  .man-baby-photo {
+    margin-right: 5em;
+    margin-top: 1em;
+    height: 12.5rem;
+  }
+  //navbar
+  .nav-container {
+    .navbar {
+      .navbar-list {
+        flex-wrap: nowrap;
+        margin-left: 10.5em;
+        margin-right: 10.5em;
+        padding: 0;
+       
+      }
+    }
+  }
+  //form
+  .main-container {
+    .form-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 10em;
+  
+      .form-title {
+        flex-basis: 32%;
+        font-size: 4rem;
+        color: white;
+        margin-bottom: 2rem;
+      }
+  
+      .form-container {
+        flex-basis: 35%;
+        .form-item {
+          textarea {
+            height: 10em;
+          }
+        }
+      }
+    }
+    .map-wrapper {
+      justify-content: flex-start;
+      overflow: hidden;
+
+      .map-box {
+        left: 7em;
+        top: 5em;
+        width: 33%;
+        .map-box__content {
+
+          .map-box__content, h3 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+  
+          }
+          .map-box__content, p {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+          } 
+        }
+      }
+      .map-image-wrapper {
+        width: 100%;
+        .map-photo {
+          width: 100%;
+          
+        } 
+      }
+    }
+  }
+}
+
+

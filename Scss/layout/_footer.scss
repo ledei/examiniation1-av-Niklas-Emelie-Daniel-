@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+
+// Footer
+.page-footer {
+  width: 100%;
+  height: 5em;
+  background-color: $grey-clr;
+}
+// Footer button
+.footer-btn {
+  display: none;
+}
+
+// Bigger screen
+@media screen and (min-width: 768px) {
+  // Footer
+  .page-footer {
+    height: 18em;
+    background-color: rgb(107, 103, 103);
+
+    // Footer button
+    .footer-btn {
+      display: block;
+      text-align: center;
+      padding: 1.5em;
+
+      background-color: $grey-clr;
+
+      font-family: "Fira Sans", sans-serif;
+      color: rgb(74, 73, 73);
+      font-weight: bold;
+      position: relative;
+    }
+
+    .footer-btn::before {
+
+        content: ("\005e");
+        position: absolute;
+        bottom: 2.5em;
+        left: 50%;
+        }
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, Insurance, Project, Home, Contact" />
+    <meta name="description" content="Oh hello there! Whats on your mind? Come visit us!" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheet/main.css" />
+    <title>Insurance Project - Contact</title>
+  </head>
+
+  <body>
+    <!-- header  -->
+    <header class="header-wrapper">
+      <h1 class="header-title">Oh hello there!</h1>
+      <img
+        class="man-baby-photo"
+        src="./assets/man-baby.png"
+        alt="Image of man and baby" />
+    </header>
+    <!-- nav -->
+    <div class="nav-container">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="#">Our offer</a></li>
+          <li class="nav-item"><a href="#">Why us</a></li>
+          <li class="nav-item"><a class="active" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- form -->
+    <div class="main-container">
+      <div class="form-wrapper">
+        <h2 class="form-title">Whats on your mind?</h2>
+
+        <form class="form-container">
+          <div class="form-item">
+            <label for="email">Your email</label>
+            <input name="email" id="email" type="email" />
+          </div>
+          <div class="form-item">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="5" cols="33">
+It was a dark and stormy night...</textarea
+            >
+          </div>
+          <input class="submit-btn" type="submit" value="Send message" />
+        </form>
+      </div>
+      <!-- map -->
+      <div class="map-wrapper">
+        <div class="map-box">
+          <div class="map-box__content">
+            <h3>Come visit us!</h3>
+            <p>2219 Griffin Street</p>
+            <p>San Francisco</p>
+          </div>
+        </div>
+        <div class="map-image-wrapper">
+          <img
+            class="map-photo"
+            src="./assets/google-maps.png"
+            alt="Google map photo" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as *;
+// Nav-list
+.navbar {
+  background-color: white;
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .nav-item {
+      flex: 50%;
+      text-align: center;
+        .nav-item, a {
+        font-weight: bold;
+        display: block;
+        padding: 2rem;
+        text-decoration: none;
+        transition: background-color 0.2s ease-in-out;
+        color: $grey-clr;
+
+        &:hover {
+          background-color: $light-grey-clr;
+          color: black
+        }
+      }
+
+    }
+  }
+}
+// bigger screen
+@media only screen and (min-width:768px) {
+  // disable wrap
+  .navbar {
+    .nav-list {
+      flex-wrap: nowrap;
+  
+    }
+  }
+}

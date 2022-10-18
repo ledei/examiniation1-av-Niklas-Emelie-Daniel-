@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+.page-header .main-header {
+  background-color: #C7DDEA;
+  padding-top: 2em;
+}
+.page-header .main-heading {
+  margin-left: 0.5em;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+.page-header .main-header-text {
+  margin-left: 0.5em;
+  padding: 0 1em;
+  line-height: 1.4em;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(84, 84, 84);
+}
+.page-header .text-color {
+  color: white;
+}
+.page-header .header-button {
+  padding: 2em 5em;
+  border-radius: 999px;
+  border: none;
+  box-shadow: 0.5px 0.5px grey;
+  background-color: white;
+  font-size: 0.6em;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+  margin-left: 1em;
+  margin-top: 4em;
+}
+.page-header .side-header-top {
+  display: flex;
+  flex-direction: column;
+  background-color: #F17949;
+  height: 20em;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.page-header .side-header-bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAB131;
+  height: 20em;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.page-header .h2-top,
+.page-header .h2-bottom {
+  font-size: 2.5em;
+  font-family: "Frank Ruhl Libre", serif;
+  color: white;
+}
+.page-header .p-top,
+.page-header .p-bottom {
+  font-size: 0.8em;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  color: rgb(84, 84, 84);
+}
+.page-header .image {
+  width: 90%;
+  height: 90%;
+  margin-top: 2em;
+  margin-left: 1em;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+    height: 40em;
+  }
+  .page-header .main-header {
+    flex-basis: 50%;
+    position: relative;
+  }
+  .page-header .main-header-content {
+    position: relative;
+    z-index: 2;
+  }
+  .page-header .main-heading {
+    padding: 0 4em;
+  }
+  .page-header .main-header-text {
+    padding: 0 10em;
+  }
+  .page-header .side-headers {
+    flex-basis: 50%;
+  }
+  .page-header .image {
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+    width: 50%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0;
+    z-index: 1;
+  }
+  .page-header .header-button {
+    margin-top: 10em;
+    margin-left: 17em;
+    cursor: pointer;
+    transition-duration: 0.2s;
+  }
+  .page-header .header-button:hover {
+    background-color: #A9A19E;
+    color: white;
+  }
+}
+.article-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAB131;
+  align-items: center;
+}
+.article-container .article-title {
+  color: white;
+  margin-top: 1.5em;
+  font-size: 2.5em;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.article-container .top-text,
+.article-container .bottom-text {
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  padding: 2em 2.5em;
+  line-height: 1.3em;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-container {
+    justify-content: center;
+    padding-top: 20em;
+  }
+  .article-container .article-title {
+    font-size: 3em;
+  }
+  .article-container .top-text,
+.article-container .bottom-text {
+    opacity: 0.7;
+    font-size: 1.5em;
+    width: 30%;
+  }
+}
+.navbar {
+  background-color: white;
+}
+.navbar .nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar .nav-list .nav-item {
+  flex: 50%;
+  text-align: center;
+}
+.navbar .nav-list .nav-item .nav-item, .navbar .nav-list .nav-item a {
+  font-weight: bold;
+  display: block;
+  padding: 2rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  color: #A9A19E;
+}
+.navbar .nav-list .nav-item .nav-item:hover, .navbar .nav-list .nav-item a:hover {
+  background-color: #F1F1F1;
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar .nav-list {
+    flex-wrap: nowrap;
+  }
+}
+.pager-main {
+  background-color: #A9A19E;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.pager-main .main-title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: bold;
+  font-size: 2.1em;
+  color: #fff;
+  margin-top: 2em;
+}
+.pager-main .main-btn {
+  display: none;
+}
+.pager-main .main-text {
+  padding-top: 1em;
+  font-size: 1.4em;
+  font-family: "Fira Sans", sans-serif;
+  color: #343a40;
+  margin-bottom: 5em;
+}
+.pager-main .card {
+  background-color: #f9f9f9;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5em auto;
+  position: relative;
+  height: 23em;
+  justify-content: end;
+  text-align: center;
+  box-shadow: 0px 5px 10px gray;
+  width: 24em;
+}
+.pager-main .card .card-box {
+  position: absolute;
+  text-align: center;
+  border-radius: 0.5em;
+  width: 90%;
+  height: 13em;
+  overflow: hidden;
+  top: -2em;
+}
+.pager-main .card .child {
+  background-color: #C7DDEA;
+}
+.pager-main .card .adult {
+  background-color: #FAB131;
+}
+.pager-main .card .old {
+  background-color: #F17949;
+}
+.pager-main .card .box-img {
+  margin: 1em;
+  width: 35%;
+}
+.pager-main .card .old-img {
+  margin-top: 2em;
+  width: 70%;
+}
+.pager-main .card .card-title {
+  font-family: "Fira Sans", sans-serif;
+}
+.pager-main .card .card-text {
+  margin: 1em;
+  margin-bottom: 3em;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+@media only screen and (min-width: 768px) {
+  .pager-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  }
+  .pager-main .main-continer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10em;
+    align-items: stretch;
+    margin: 5em;
+    margin-bottom: 25em;
+  }
+  .pager-main .main-continer .main-title {
+    flex-basis: 40%;
+    font-size: 2em;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .pager-main .main-continer .main-btn {
+    display: block;
+    padding: 1em 2em;
+    font-size: 0.5em;
+    border-radius: 99999px;
+    border: none;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+  }
+  .pager-main .main-continer .main-text {
+    flex-basis: 25%;
+    font-size: 1.3rem;
+    margin: 0;
+    padding-top: 0;
+  }
+  .pager-main .card-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: -20em;
+    gap: 3em;
+    margin: 0 auto;
+  }
+  .pager-main .card-container .card {
+    height: 32em;
+    width: 20em;
+    margin: 0;
+    margin-bottom: 5em;
+  }
+  .pager-main .card-container .card .card-box {
+    height: 16em;
+  }
+  .pager-main .card-container .card .box-img {
+    margin: 1em;
+    width: 53%;
+  }
+  .pager-main .card-container .card .old-img {
+    margin-top: 2em;
+    width: 80%;
+  }
+  .pager-main .card-container .card .card-text {
+    font-size: 1.1em;
+  }
+}
+.pager-step {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+.pager-step .step-card {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+}
+.pager-step .step-card:nth-child(3) {
+  background-color: lightgray;
+}
+.pager-step .step-card:first-child {
+  background-color: #C7DDEA;
+}
+.pager-step .step-card:nth-child(5) {
+  background-color: #F17949;
+}
+.pager-step .card-title {
+  margin: 0 auto;
+  font-size: 3em;
+  padding: 2em;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.pager-step .card-number {
+  opacity: 0.5;
+  margin: 0.2em;
+  font-size: 2em;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.pager-step .card-item {
+  opacity: 0.8;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  padding: 4em 0;
+  padding-right: 3em;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  width: 55%;
+}
+
+@media only screen and (min-width: 768px) {
+  .pager-step {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .pager-step .card-title {
+    flex: 1 1 33%;
+  }
+  .pager-step .step-card {
+    height: 20em;
+    flex: 1 1 33%;
+    align-items: center;
+  }
+  .pager-step .card-item {
+    font-size: 1.1em;
+    opacity: 0.7;
+  }
+  .pager-step .card-number {
+    align-self: flex-start;
+  }
+}
+.page-footer {
+  width: 100%;
+  height: 5em;
+  background-color: #A9A19E;
+}
+
+.footer-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer {
+    height: 18em;
+    background-color: rgb(107, 103, 103);
+  }
+  .page-footer .footer-btn {
+    display: block;
+    text-align: center;
+    padding: 1.5em;
+    background-color: #A9A19E;
+    font-family: "Fira Sans", sans-serif;
+    color: rgb(74, 73, 73);
+    font-weight: bold;
+    position: relative;
+  }
+  .page-footer .footer-btn::before {
+    content: "^";
+    position: absolute;
+    bottom: 2.5em;
+    left: 50%;
+  }
+}
+.header-wrapper {
+  background-color: #C7DDEA;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-wrapper .header-title {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 50%;
+  padding-left: 2rem;
+}
+
+.nav-container .navbar {
+  background-color: white;
+}
+.nav-container .navbar .navbar-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav-container .navbar .navbar-list .nav-item {
+  flex: 50%;
+  text-align: center;
+}
+.nav-container .navbar .navbar-list .nav-item .nav-item, .nav-container .navbar .navbar-list .nav-item a {
+  font-weight: bold;
+  display: block;
+  padding: 2rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  color: #A9A19E;
+}
+.nav-container .navbar .navbar-list .nav-item .nav-item:hover, .nav-container .navbar .navbar-list .nav-item a:hover {
+  background-color: #F1F1F1;
+  color: black;
+}
+
+.main-container .form-wrapper {
+  background-color: #A9A19E;
+  padding: 2rem 2rem 12rem 2rem;
+}
+.main-container .form-wrapper .form-title {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.main-container .form-wrapper .form-container {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .form-wrapper .form-container .form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.main-container .form-wrapper .form-container .form-item label {
+  color: #F1F1F1;
+  font-size: 1.125rem;
+  margin-bottom: 0.325rem;
+}
+.main-container .form-wrapper .form-container .form-item input, .main-container .form-wrapper .form-container .form-item textarea {
+  color: black;
+  padding: 1rem;
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+}
+.main-container .form-wrapper .form-container .submit-btn {
+  margin-left: auto;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  border: 0;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.2);
+  transition: font-size 0.2s ease-in-out;
+  cursor: pointer;
+}
+.main-container .map-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main-container .map-wrapper .map-box {
+  color: white;
+  background-color: #FAB131;
+  position: absolute;
+  top: -9em;
+  width: 90%;
+}
+.main-container .map-wrapper .map-box .map-box__content {
+  padding: 2rem 2rem 4rem 2rem;
+}
+.main-container .map-wrapper .map-box .map-box__content .map-box__content, .main-container .map-wrapper .map-box .map-box__content h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.main-container .map-wrapper .map-box .map-box__content .map-box__content, .main-container .map-wrapper .map-box .map-box__content p {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.main-container .map-wrapper .map-image-wrapper .map-photo {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .header-title {
+    margin-left: 7em;
+  }
+  .man-baby-photo {
+    margin-right: 5em;
+    margin-top: 1em;
+    height: 12.5rem;
+  }
+  .nav-container .navbar .navbar-list {
+    flex-wrap: nowrap;
+    margin-left: 10.5em;
+    margin-right: 10.5em;
+    padding: 0;
+  }
+  .main-container .form-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10em;
+  }
+  .main-container .form-wrapper .form-title {
+    flex-basis: 32%;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  .main-container .form-wrapper .form-container {
+    flex-basis: 35%;
+  }
+  .main-container .form-wrapper .form-container .form-item textarea {
+    height: 10em;
+  }
+  .main-container .map-wrapper {
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  .main-container .map-wrapper .map-box {
+    left: 7em;
+    top: 5em;
+    width: 33%;
+  }
+  .main-container .map-wrapper .map-box .map-box__content .map-box__content, .main-container .map-wrapper .map-box .map-box__content h3 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .main-container .map-wrapper .map-box .map-box__content .map-box__content, .main-container .map-wrapper .map-box .map-box__content p {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  .main-container .map-wrapper .map-image-wrapper {
+    width: 100%;
+  }
+  .main-container .map-wrapper .map-image-wrapper .map-photo {
+    width: 100%;
+  }
+}
+body {
+  font-family: "Fira Sans";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Frank Ruhl Libre";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,145 @@
+@use "../abstracts/variables" as *;
+
+// main-header
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  .main-header {
+    background-color: $blue-clr;
+    padding-top: 2em;
+  }
+
+  .main-heading {
+    margin-left: 0.5em;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 2.5em;
+    font-weight: 900;
+  }
+
+  .main-header-text {
+    margin-left: 0.5em;
+    padding: 0 1em;
+
+    line-height: 1.4em;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    color: rgb(84, 84, 84);
+  }
+
+  .text-color {
+    color: white;
+  }
+
+  .header-button {
+    padding: 2em 5em;
+    border-radius: 999px;
+    border: none;
+    box-shadow: 0.5px 0.5px grey;
+
+    background-color: white;
+    font-size: 0.6em;
+    font-weight: bold;
+    font-family: "Fira Sans", sans-serif;
+
+    margin-left: 1em;
+    margin-top: 4em;
+  }
+// side header top body
+  .side-header-top {
+    display: flex;
+    flex-direction: column;
+    background-color: $orange-clr;
+    height: 20em;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+// side header bottom body
+  .side-header-bottom {
+    display: flex;
+    flex-direction: column;
+    background-color: $yellow-clr;
+    height: 20em;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+// side header title
+  .h2-top,
+  .h2-bottom {
+    font-size: 2.5em;
+    font-family: "Frank Ruhl Libre", serif;
+    color: white;
+  }
+// side header paragraph
+  .p-top,
+  .p-bottom {
+    font-size: 0.8em;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    color: rgb(84, 84, 84);
+  }
+// header img
+  .image {
+    width: 90%;
+    height: 90%;
+
+    margin-top: 2em;
+    margin-left: 1em;
+    display: block;
+  }
+}
+// bigger screen
+@media screen and (min-width: 768px) {
+  // header body
+  .page-header {
+    flex-direction: row;
+    height: 40em;
+// main header
+    .main-header {
+      flex-basis: 50%;
+      position: relative;
+    }
+
+    .main-header-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .main-heading {
+        padding: 0 4em;
+    }
+
+    .main-header-text {
+        padding: 0 10em;
+    }
+// side header
+    .side-headers {
+      flex-basis: 50%;
+    }
+// header img
+    .image {
+      position: absolute;
+      bottom: 0;
+      right: 1em;
+      width: 50%;
+      height: auto;
+      object-fit: contain;
+      margin: 0;
+      z-index: 1;
+    }
+// button
+    .header-button {
+        margin-top: 10em;
+        margin-left: 17em;
+        cursor: pointer;
+        transition-duration: 0.2s;
+    }
+
+    .header-button:hover {
+        background-color: #A9A19E;
+        color: white;
+      }
+  }
+}
