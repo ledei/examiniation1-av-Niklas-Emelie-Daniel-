@@ -92,7 +92,6 @@
         text-transform: uppercase;
         font-weight: bold;
         box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.2);
-        transition: font-size 0.2s ease-in-out;
         cursor: pointer; 
       }
     }
@@ -179,7 +178,7 @@
       }
 
       .submit-btn{
-        transition: 2s;
+        transition: 2s ;
         &:hover {
           background-color: #333333;
           color: white;
