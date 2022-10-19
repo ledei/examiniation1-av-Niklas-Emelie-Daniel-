@@ -296,6 +296,7 @@
     font-family: "Fira Sans", sans-serif;
     font-weight: bold;
     transition: 1s;
+    box-shadow: 1px 1px 2px black;
   }
   .pager-main .main-continer .main-btn:hover {
     background-color: #333333;
