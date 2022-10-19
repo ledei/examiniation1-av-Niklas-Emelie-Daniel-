@@ -80,6 +80,7 @@
           background-color: white;
           border: 0;
           border-radius: 2px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
         }
       }
       .submit-btn {
@@ -91,7 +92,7 @@
         margin-top: 2rem;
         text-transform: uppercase;
         font-weight: bold;
-        box-shadow: 0px 3px 1px 0px rgba(0,0,0,0.2);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
         cursor: pointer; 
       }
     }
@@ -178,7 +179,8 @@
       }
 
       .submit-btn{
-        transition: 2s ;
+        transition: 1s background-color ;
+        transition: 1s color ;
         &:hover {
           background-color: #333333;
           color: white;

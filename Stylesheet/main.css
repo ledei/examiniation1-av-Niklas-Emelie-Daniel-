@@ -29,7 +29,7 @@
   padding: 2em 5em;
   border-radius: 999px;
   border: none;
-  box-shadow: 0.5px 0.5px grey;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   background-color: white;
   font-size: 0.6em;
   font-weight: bold;
@@ -113,7 +113,8 @@
     margin-top: 10em;
     margin-left: 17em;
     cursor: pointer;
-    transition-duration: 0.2s;
+    transition: 1s background-color;
+    transition: 1s color;
   }
   .page-header .header-button:hover {
     background-color: #A9A19E;
@@ -223,7 +224,7 @@
   height: 23em;
   justify-content: end;
   text-align: center;
-  box-shadow: 0px 5px 10px gray;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   width: 90%;
 }
 .pager-main .card .card-box {
@@ -296,8 +297,9 @@
     border: none;
     font-family: "Fira Sans", sans-serif;
     font-weight: bold;
-    transition: 1s;
-    box-shadow: 1px 1px 2px black;
+    transition: 1s background-color;
+    transition: 1s color;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   }
   .pager-main .main-continer .main-btn:hover {
     background-color: #333333;
@@ -504,6 +506,7 @@
   background-color: white;
   border: 0;
   border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 .main-container .form-wrapper .form-container .submit-btn {
   margin-left: auto;
@@ -514,7 +517,7 @@
   margin-top: 2rem;
   text-transform: uppercase;
   font-weight: bold;
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   cursor: pointer;
 }
 .main-container .map-wrapper {
@@ -578,7 +581,8 @@
     height: 10em;
   }
   .main-container .form-wrapper .submit-btn {
-    transition: 2s;
+    transition: 1s background-color;
+    transition: 1s color;
   }
   .main-container .form-wrapper .submit-btn:hover {
     background-color: #333333;

@@ -45,7 +45,7 @@
         height: 23em;
         justify-content: end;
         text-align: center;
-        box-shadow: 0px 5px 10px gray;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         width: 90%;
     
         .card-box{
@@ -133,8 +133,9 @@
             border: none;
             font-family: 'Fira Sans', sans-serif;
             font-weight: bold;
-            transition: 1s;
-            box-shadow: 1px 1px 2px black;
+            transition: 1s background-color ;
+            transition: 1s color ;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
             
             &:hover {
                 background-color: #333333;

@@ -35,7 +35,7 @@
     padding: 2em 5em;
     border-radius: 999px;
     border: none;
-    box-shadow: 0.5px 0.5px grey;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 
     background-color: white;
     font-size: 0.6em;
@@ -134,7 +134,8 @@
         margin-top: 10em;
         margin-left: 17em;
         cursor: pointer;
-        transition-duration: 0.2s;
+        transition: 1s background-color ;
+        transition: 1s color ;
     }
 
     .header-button:hover {
