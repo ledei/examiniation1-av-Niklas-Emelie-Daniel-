@@ -133,6 +133,12 @@
             border: none;
             font-family: 'Fira Sans', sans-serif;
             font-weight: bold;
+            transition: 1s;
+            
+            &:hover {
+                background-color: #333333;
+                color: white;
+              }
         }
 
         .main-text{

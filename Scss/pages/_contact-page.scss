@@ -177,6 +177,14 @@
           }
         }
       }
+
+      .submit-btn{
+        transition: 2s;
+        &:hover {
+          background-color: #333333;
+          color: white;
+        }
+      }
     }
     .map-wrapper {
       justify-content: flex-start;

@@ -295,6 +295,11 @@
     border: none;
     font-family: "Fira Sans", sans-serif;
     font-weight: bold;
+    transition: 1s;
+  }
+  .pager-main .main-continer .main-btn:hover {
+    background-color: #333333;
+    color: white;
   }
   .pager-main .main-continer .main-text {
     flex-basis: 25%;
@@ -570,6 +575,13 @@
   }
   .main-container .form-wrapper .form-container .form-item textarea {
     height: 10em;
+  }
+  .main-container .form-wrapper .submit-btn {
+    transition: 2s;
+  }
+  .main-container .form-wrapper .submit-btn:hover {
+    background-color: #333333;
+    color: white;
   }
   .main-container .map-wrapper {
     justify-content: flex-start;
